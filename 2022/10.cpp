@@ -5,7 +5,7 @@
 
 int main(void)
 {
-    std::string line, instr;
+    std::string line, instr, output;
     int v, x = 1, cycles = 0, signal = 0;
 
     while (!std::getline(std::cin, line).eof())
@@ -30,16 +30,16 @@ int main(void)
 
             if ((x - 1 <= pos) && (pos <= x + 1))
             {
-                std::cout << "#";
+                output += '#';
             }
             else
             {
-                std::cout << ".";
+                output += ' ';
             }
 
             if (pos == 39)
             {
-                std::cout << std::endl;
+                output += '\n';
             }
         }
 
@@ -49,6 +49,7 @@ int main(void)
         }
     }
 
-    std::cout << signal << std::endl;
+    output.pop_back();
+    std::cout << signal << "\n" << output << std::endl;
     return 0;
 }

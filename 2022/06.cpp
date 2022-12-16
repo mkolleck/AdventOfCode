@@ -35,7 +35,6 @@ int main(void)
     {
         process(line, 4);
         process(line, 14);
-        std::cout << "---" << std::endl;
     }
 
     return 0;

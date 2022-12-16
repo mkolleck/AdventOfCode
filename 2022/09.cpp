@@ -56,7 +56,7 @@ int main(void)
         }
     }
 
-    std::cout << visited[1].size() << " "
+    std::cout << visited[1].size() << "\n"
         << visited[ROPE - 1].size() << std::endl;
     return 0;
 }
