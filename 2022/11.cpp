@@ -89,7 +89,7 @@ void iterate(std::vector<Monkey> monkeys, int iterations, Relief relief)
 
 static unsigned long modulus = 1;
 
-int main(int argc, char** argv)
+int main(void)
 {
     std::vector<Monkey> monkeys;
     std::string line;

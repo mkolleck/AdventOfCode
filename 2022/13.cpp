@@ -140,7 +140,7 @@ static bool operator==(const Packet& a, const char* b)
     return a <=> Packet(b) == std::strong_ordering::equal;
 }
 
-int main(int argc, char** argv)
+int main(void)
 {
     std::string line;
     std::vector<Packet> packets;

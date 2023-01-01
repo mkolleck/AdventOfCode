@@ -4,7 +4,7 @@
 #include <map>
 #include <sstream>
 
-int main(int argc, char** argv)
+int main(void)
 {
     std::map<std::pair<int, int>, char> map;
     int bottom = 0, grains = 0;

@@ -12,16 +12,16 @@ struct M
     int d = 0;
 };
 
-std::map<std::pair<int, int>, M> map;
-int row = 2000000, maxXY = 4000000;
-bool beaconFound = false;
+static std::map<std::pair<int, int>, M> map;
+static int row = 2000000, maxXY = 4000000;
+static volatile bool beaconFound = false;
 
 static inline int Δ(const std::pair<int, int>& a, const std::pair<int, int>& b)
 {
     return abs(b.first - a.first) + abs(b.second - a.second);
 }
 
-void checkBeacons(int a, int b)
+static void checkBeacons(int a, int b)
 {
     for (int y = a; y <= b ; y++)
     {
@@ -40,7 +40,7 @@ void checkBeacons(int a, int b)
 
             if (beaconPossible)
             {
-                std::cout << x * 4000000 + y << std::endl;
+                std::cout << (long int)(x) * 4000000 + y << std::endl;
                 beaconFound = true;
             }
 

@@ -17,7 +17,7 @@ static bool distinct(const std::string& m)
 
 static void process(const std::string& line, int l)
 {
-    for (int i = l; i < line.length(); i++)
+    for (size_t i = l; i < line.length(); i++)
     {
         if (distinct(line.substr(i - l, l)))
         {

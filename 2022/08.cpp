@@ -32,7 +32,6 @@ int main(void)
     for (int r1 = 0; r1 < dim; r1++)
     {
         int r1max = 0, r2max = 0, c1max = 0, c2max = 0;
-        int r2 = dim - r1 - 1;
 
         for (int c1 = 0; c1 < dim; c1++)
         {
