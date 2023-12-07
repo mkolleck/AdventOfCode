@@ -1,4 +1,4 @@
-// https://adventofcode.com/2023/day/1
+// https://adventofcode.com/2023/day/6
 
 #include <cmath>
 #include <iostream>
