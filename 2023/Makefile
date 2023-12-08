@@ -1,7 +1,7 @@
 CXX := g++
 CXXFLAGS += -std=c++20 -g -O2 -Wall -Wextra -Werror 
 
-SRC := $(wildcard *.cpp)
+SRC := $(wildcard ??.cpp)
 ALL := $(SRC:%.cpp=%)
 
 all: $(ALL)
