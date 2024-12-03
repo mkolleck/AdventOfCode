@@ -1,5 +1,6 @@
 // https://adventofcode.com/2022/day/13
 
+#include <algorithm>
 #include <iostream>
 #include <list>
 #include <vector>
